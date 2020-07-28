@@ -2,10 +2,16 @@ package com.services.catalog.model;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class CatalogItem {
 	private String name;
 	private String description;
 	private Integer rating;
+	
+	@JsonProperty("review_date")
+	@JsonFormat(pattern="yyyy-MM-dd")
 	private Date reviewDate;
 	
 	public CatalogItem() {
