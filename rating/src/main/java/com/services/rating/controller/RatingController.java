@@ -23,7 +23,7 @@ public class RatingController {
 	public UserRating getUserRating(@PathVariable("userId")String userId) {
 		UserRating userRating =new UserRating();
 		userRating.setUserId(userId);
-		userRating.setRatings(Arrays.asList(new MovieRating("901", 4),new MovieRating("902", 3)));
+		userRating.setRatings(Arrays.asList(new MovieRating("550", 4),new MovieRating("300", 3)));
 		return userRating;
 	}
 }

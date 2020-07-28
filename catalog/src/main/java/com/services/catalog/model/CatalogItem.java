@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class CatalogItem {
 	private String name;
+	private String description;
 	private Integer rating;
 	private Date reviewDate;
 	
@@ -11,9 +12,10 @@ public class CatalogItem {
 		super();
 	}
 	
-	public CatalogItem(String name, Integer rating, Date reviewDate) {
+	public CatalogItem(String name, String description,Integer rating, Date reviewDate) {
 		super();
 		this.name = name;
+		this.description = description;
 		this.rating = rating;
 		this.reviewDate = reviewDate;
 	}
@@ -36,6 +38,11 @@ public class CatalogItem {
 	public void setReviewDate(Date reviewDate) {
 		this.reviewDate = reviewDate;
 	}
-	
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
 	
 }
