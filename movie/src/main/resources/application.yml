@@ -6,4 +6,5 @@ my:
    greeting: Hello, Welcome to ${my.name}
    cities: Mumbai,Pune,Ahmedabad
    address: "{city:'Pune',mail:'test@test.com',mobile:'9123456789'}"
-management.endpoints.web.exposure.include: "*"
+management.endpoints.web.exposure.include: "health,info,refresh,configprops"
+spring.cloud.config.uri: http://localhost:8888
