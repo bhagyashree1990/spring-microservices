@@ -1,0 +1,9 @@
+spring.application.name: movie-info
+server.port: 8081
+api.key: API-KEY
+my:
+   name: MovieDB
+   greeting: Hello, Welcome to ${my.name}
+   cities: Mumbai,Pune,Ahmedabad
+   address: "{city:'Pune',mail:'test@test.com',mobile:'9123456789'}"
+management.endpoints.web.exposure.include: "*"
